@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - Tienda en Línea</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container container-central">
+        <!-- Cabecera de la página -->
+        <header class="header">
+            <h1 class="header__title">Sistema de Inventario - Tienda en Línea</h1>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="main">
+            <!-- Menú de botones para diferentes acciones -->
+            <nav class="menu">
+                <button class="btn btn-primary menu__button" id="show-products">Mostrar Productos</button>
+                <button class="btn btn-secondary menu__button" id="best-selling-products">Productos Más Vendidos</button>
+                <button class="btn btn-success menu__button" id="category-income">Ingresos por Categoría</button>
+                <button class="btn btn-warning menu__button" id="vip-customers">Clientes VIP</button>
+                <button class="btn btn-info menu__button" id="inventory-report">Reporte de Inventario</button>
+                <button class="btn btn-dark menu__button" id="show-sales">Mostrar Ventas</button>
+            </nav>
+
+            <!-- Sección para mostrar las tablas de inventario y ventas -->
+            <section class="inventory">
+                <div class="inventory__list">
+                    <!-- Aquí se generarán las tablas de productos y ventas -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/functions.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
